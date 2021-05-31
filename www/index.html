@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<meta charset="utf-8"/>
+        <!-- Fichier css -->
+        <link rel="stylesheet" href="./style/base.css" type="text/css" />
+        <link rel="stylesheet" href="./style/style.css" type="text/css" />
+	<title>Projet: test unitaires</title>
+    </head>
+    
+    <header>
+        <h1>Gestion de test unitaires</h1>
+    </header>
+
+    <body>
+
+        <div class="page">
+            <!-- Displayed on the left of the page -->
+            <div class="left-panel">
+                <h2>Code source</h2>
+
+                <!-- Input du code -->
+                <div>
+                    <textarea spellcheck="false" id="code-input" class="code-input"
+                              name="code" cols="100" rows="40">Put your code here!</textarea>
+                </div>
+                <textarea  class="code-input" id="compt-pos" rows="3"></textarea>
+
+                <div class="id-input">
+
+                    <h3>Exercise ID</h3>
+
+                    <input type="text" id="exercise-id" name="Exercice ID"/>
+
+                    <p id="id-result"></p>
+
+                </div>
+            </div>
+            <!-- Displayed on the right of the page -->
+                
+                <div class="right-panel" id ="right-panel">
+                  
+                  <div class="tab">
+                      <ul class="tabLinks">
+                       <li><a href="#" class="defaultOpen" onclick="changementPanel('panel0')">Instructions</a></li> 
+                       <li><a href="#" onclick="changementPanel('panel1')">Lancement des tests</a></li> 
+                       <li><a href="#" onclick="changementPanel('panel2')">Détails des tests</a></li> 
+                    </ul>
+                </div>
+                
+                <div id="panel0" class = "tabContent">
+                    <h2>INSTRUCTIONS</h2>
+                    <h3>Fonctionnement du site</h3>
+                    <p class="paragraphe-instructions">
+                        Ce site web est destiner à tester vos réponce aux différents exercices donnés par vôtre professeur. <br />
+                        Utilisez le bouton en haut à gauche de la page pour faire défiler les différents menus qui seront afficher sur la partie droite de vôtre écran.<br />
+                    </p>
+                    <h3>Lancement des tests</h3>
+                    <p class="paragraphe-instructions">
+                        <ol>
+                            <li>Collez vôtre code réponce dans la zone de texte prévue à cet effet.</li>
+                            <li>Entez l'identifiant du jeux de tests à utiliser.</li>
+                            <li>Cliquez ensuite sur le bouton <strong>"Lancer les tests"</strong>.</li>
+                        </ol>
+                    </p>
+                </div>
+
+                <div id="panel1" class = "tabContent">
+                    <h2>Lancement des tests</h2>
+
+                    <button onclick="recupCode()" type="submit">
+                        Lancer les tests
+                    </button>
+
+                    <h2>Résultats des tests</h2>
+                    
+                    <div class="result-frame">
+                        <p id="result-output"></p>
+                    </div>
+                </div>
+
+                <div id="panel2" class = "tabContent">
+                    <h2>Détails des tests<button id="details" onclick="displayTestsDetails()" type="submit">détailler les tests</button></h2>
+                    <p id="test-details"></p>
+
+                </div>
+            </div> 
+        </div>
+        <!-- script -->
+        <script type="text/javascript" src="./scripts/panel.js"></script>
+        <script type="text/javascript" src="./scripts/script.js"></script>
+
+    </body>
+</html>

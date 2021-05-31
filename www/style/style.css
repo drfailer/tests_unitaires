@@ -1,0 +1,183 @@
+body {
+  background-color: #e7e9eb;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background-color: #1E2127;
+  text-align: center;
+  padding: 0 0 0 0;
+  height: 60px;
+  margin-bottom: 25px;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+header h1 {
+  margin-top: 0;
+  color: #ffffff;
+  background-color: #1E2127;
+  padding: 5px 0 0 0;
+}
+
+
+h2 {
+  text-decoration: underline dotted;
+  margin-left: 10px;
+}
+
+
+div.page {
+  display: flex;
+}
+
+
+/* Panels */
+
+div.left-panel {
+  justify-content: left;
+  margin-right: 30px;
+  margin-left: 100px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  width: 50%;
+}
+
+
+div.right-panel {
+  justify-content: right;
+  margin-right: 100px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  width: 50%;
+}
+
+div.right-panel button {
+  margin-left: 5%;
+}
+
+
+/* Inputs */
+
+div.code-input {
+  display: block;
+ 
+}
+
+
+textarea {
+  background-color: #282c34;
+  color: #bbc2cf;
+  margin-left: 5%;
+  max-width : 90%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+
+div.id-input {
+  display: table-cell;
+  margin-left:auto;
+  margin-right:auto;
+  width: 65%;
+}
+
+
+div.result-frame {
+    background-color: #282C34;
+    color: white;
+    margin: 10px;
+    height: 500px;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* Panel buttons */
+
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #5578FF;
+}
+
+.tab ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  text-align: center;
+  width; 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tab li {
+  display: table-cell;
+  background-color: black;
+  width: 33.5%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tab li:hover {
+  background-color: #ffffff;
+}
+
+.tab li:active {
+  background-color: #ccc;
+}
+
+.tab li a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.tab li:hover a {
+  color: black;
+}
+
+ul.tabLinks {
+  margin: 0;
+  padding; 0;
+  width:100%;
+}
+
+/* tab content */
+
+.tabContent {
+  display: none;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  width: 90%;
+  height: 90%;
+  margin-bottom: auto;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width : 90%;
+  max-height : 90%;
+}
+
+.id-input h3 {
+  margin-left: 10%;
+}
+
+.id-input input {
+  margin-left: 15%;
+}
+
+#details {
+  position: relative;
+  bottom: 3px;
+  margin-left: 40%;
+}
